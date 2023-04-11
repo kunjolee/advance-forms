@@ -1,0 +1,75 @@
+[
+    {
+        "type": "text",
+        "name": "firstName",
+        "placeholder": "Kunjo",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required"
+            },
+            {
+                "type": "minLength",
+                "description": "Minimun required is 5",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Lee",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "description": "lastName required"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "k@gmail.com",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "description": "email required"
+            },
+            {
+                "type": "email",
+                "description": "Invalid email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "label": "Super Smash Bros"
+            },
+            {
+                "id": 2,
+                "label": "Metal Gear"
+            },
+            {
+                "id": 3,
+                "label": "The Legend Of Zelda"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "description": "select favorite game required"
+            }
+        ]
+    }
+]
